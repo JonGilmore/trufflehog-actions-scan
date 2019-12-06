@@ -7,6 +7,5 @@ if [ -n "$1" ]; then
   args="$@" # Overwrite if new options string is provided
 fi
 
-# githubRepo="https://github.com/$GITHUB_REPOSITORY"
-echo "$GITHUB_WORKSPACE"
+echo "$args"
 trufflehog $args $GITHUB_WORKSPACE
